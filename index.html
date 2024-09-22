@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" >
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+ 
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <title>Fayoum Universty</title>
+     <link rel="stylesheet" href="css/style.css" /> 
+     <!-- <link rel="stylesheet" href="css/style1.css" />  -->
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css//bootstrap.rtl.min.css">
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(".span1").click(function(){
+    $(".dropdown").slideToggle(500);
+  });
+});
+
+	$('.sidenav li').click(function(){
+    $('.sidenav li').removeClass("active");
+    $(this).addClass("active");
+});
+</script>
+
+<script type="text/javascript">
+	$(".menu-icon").click(function(e) {
+        e.preventDefault();
+        $(".menu-icon").toggleClass("menuicon");
+        $(".main").toggleClass("main-width");
+        $(".sidebar").toggleClass("active1");
+        $(".sidenav li a").toggleClass("anchor");
+        $(".sidenav li ").toggleClass("lislide");
+        $(".sidenav p").toggleClass("apphide");
+        $(".logo span").toggleClass("headspan");
+        $(".showstudnameanddep").toggleClass("showstudnameanddep1");
+
+        $(".logo").toggleClass("lm");
+
+});
+</script>
+<script>
+$(document).ready(function(){
+  $(".user").click(function(){
+    $(".profile-div").toggle(1000);
+  });
+  $(".bell").click(function(){
+    $(".notification-div").toggle(1000);
+  });
+});
+</script>
+  </body>
+</html>
